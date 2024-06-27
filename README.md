@@ -1,5 +1,5 @@
 # PennyWISE PH
-Philippine Currency Identifier is a mobile application designed to assist users in identifying and authenticating Philippine currency.
+PennyWISE is a user-friendly mobile money tracker designed to help individuals manage their finances effectively.
 
 <div align="center">
   <img src="public/images/banner.png">
