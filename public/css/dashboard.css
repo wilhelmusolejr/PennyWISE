@@ -1,0 +1,120 @@
+body {
+    position: relative;
+}
+
+nav {
+    background-color: black;
+    min-height: 10vh;
+
+    font-size: 18px;
+    color: white;
+}
+
+nav .logo {
+    font-size: 30px;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+}
+
+main {
+    min-height: 90vh;
+    background-color: #151515;
+
+    color: white;
+    font-size: 18px;
+}
+
+.main-balance {
+    /* font-size: 100px; */
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.balance-parent > div:nth-child(2) {
+    min-width: 200px;
+}
+.balance-parent > div:nth-child(2) .balance {
+    letter-spacing: 1px;
+}
+
+.table-container {
+    background-color: #333;
+    min-height: 60vh;
+    max-height: 60vh;
+    overflow-x: auto;
+}
+
+table {
+    min-width: 500px;
+    overflow-x: auto;
+}
+thead th {
+    letter-spacing: 1px;
+}
+thead th, thead td {
+    border-top: 1px solid #707070;
+}
+
+th, td {
+    border-bottom: 1px solid #707070;
+    padding: 20px 10px;
+    font-weight: normal;
+}
+
+.open td {
+    border-bottom: none;
+}
+
+tbody .empty td {
+    height: 100%;
+    border-bottom: none;
+}
+/* .no-data td:last-child {
+    border-bottom: none;
+} */
+
+.table-money-out {
+    background-color: rgba(255, 74, 74, 0.1);
+}
+.table-money-out .fa-solid.fa-square {
+    color: #FF4A4A;
+}
+
+.table-money-in {
+    background-color: rgba(74, 255, 98, 0.1);
+}
+.table-money-in .fa-solid.fa-square {
+    color: #60c16d;
+}
+
+.fa-trash-can,
+.fa-plus,
+.fa-eye,
+.fa-eye-slash,
+.fa-square,
+.fa-square-check {
+    cursor: pointer
+}
+
+/* tbody tr.table-money-out:hover,
+tbody tr.table-money-in:hover {
+    background-color: #555;
+} */
+
+.selected {
+    border-left: 1px solid #fff !important;
+    border-right: 1px solid #fff !important;
+}
+
+
+@media (max-height: 670px) { /* Adjust the breakpoint as needed */
+    .table-container {
+        background-color: #333;
+        min-height: 50vh;
+        max-height: 50vh;
+        overflow-x: auto;
+    }
+}

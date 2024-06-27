@@ -1,0 +1,142 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.home .logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
+}
+
+.logo {
+    color: #dbdbdb;
+    letter-spacing: 1px;
+
+    z-index:1;
+}
+.logo span {
+    color: #60c16d;
+}
+.logo .fs-1 {
+
+}
+
+#loading-screen {
+    display: flex;
+
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+
+    position: relative;
+    overflow: hidden;
+
+    z-index: 2;
+}
+
+#loading-screen p {
+    font-size: 50px;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+#loading-screen .background-moving {
+    position: absolute;
+    left: 0;
+
+    font-size: 500px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(219, 219, 219, .3);
+    white-space: nowrap;
+
+    animation: moveRightToLeft 100s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+
+.content {
+    display: none;
+}
+
+.balance-green {
+    color: #60c16d;
+}
+.balance-red {
+    color: #FF4A4A;
+}
+
+.btn-primary {
+    background-color: black !important;
+    color: #f4f4f4;
+    border: none;
+    border: 1px solid transparent;
+}
+.btn-primary:hover {
+    background-color: #f4f4f4 !important;
+    color: black !important;
+    border: 1px solid black;
+}
+
+.btn-secondary {
+    background-color: #f4f4f4 !important;
+    border: 1px solid transparent !important;
+    color: black;
+}
+.btn-secondary:hover {
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+.btn-primary:disabled {
+    background-color: #111 !important
+}
+
+.form-splitter > * {
+    flex: 1 1 48%; /* 48% to account for the gap and ensure two elements fit in one row */
+    min-width: calc(50% - 10px); /* Adjust as needed based on the gap */
+}
+
+@media (max-width: 600px) { /* Adjust the breakpoint as needed */
+    .form-splitter > * {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        min-width: 100%;
+    }
+}
+
+
+.modal-dialog.modal-dialog-scrollable .modal-body {
+    min-height: 50vh !important;
+    max-height: 50vh !important;
+}
+
+
+
+
