@@ -13,8 +13,12 @@
         <div class="container">
             <div class="balance-parent d-flex flex-md-row gap-2 justify-content-md-between align-items-md-center flex-column py-5">
                 <div class="d-md-flex align-items-end text-center gap-2">
+
                     <p class="main-balance fs-1">P {{ number_format($currentBalance, 0, '.', ',') }}.00</p>
-                    <p class="fs-6">as of May 05, 2015</p>
+                    @if ($data->first())
+                    <p class="fs-6">as of {{ date('F d, Y', strtotime($data->first()->date)) }}</p>
+                    @endif
+
                 </div>
                 <div class="text-uppercase">
                     <div class="d-flex justify-content-between gap-4 fs-6">
