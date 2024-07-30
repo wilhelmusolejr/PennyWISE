@@ -25,7 +25,7 @@ PennyWISE features an integrated account system, allowing users to access their 
 <p>Please click <a target="blank" href="#">here</a> or manually visit bit.ly/ph-identifier.</p>
 
 ## Technology Used
-This section provides an overview of the key technologies and frameworks utilized in the development of the Philippine Currency Identifier app:
+This section provides an overview of the key technologies and frameworks utilized in the development of this project:
 
 * Programming Languages: PHP, Javascript
 * Integrated Development Environments: Visual Studio.
